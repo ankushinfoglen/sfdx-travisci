@@ -1,9 +1,11 @@
 public with sharing class myclass {
+	Integer count;
 	public myclass() {
-		Integer count= 0;
+		count= 0;
 	}
 
 	public String getAppVersion() {
+		count = 2;
 		return '1.0.0';
 	}
 }
