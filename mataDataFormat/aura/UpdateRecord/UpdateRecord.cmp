@@ -1,0 +1,27 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global" >
+	
+    <aura:attribute name="account" type="Object" description="The record object to be displayed"/>
+	<aura:attribute name="accountRecord" type="Object" description="A simplified view record object to be displayed"/>
+	<aura:attribute name="recordError" type="String" description="An error message bound to force:recordData"/>
+    <!--<aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+	<aura:html tag="style">
+        .slds-backdrop {
+        background: rgba(43, 40, 38, 0) !important;  
+        }
+        .slds-fade-in-open {
+        display:none !important;
+       }
+    </aura:html>-->
+    <lightning:spinner>Updating..</lightning:spinner>
+
+    <force:recordData aura:id="accRec" 
+		layoutType="FULL"
+		recordId="{!v.recordId}"
+		targetError="{!v.recordError}"
+		targetRecord="{!v.account}"
+		targetFields="{!v.accountRecord}"
+    fields="AccountNumber,Name"
+		mode="EDIT"
+         recordUpdated="{!c.doInit}"/> <!--recordUpdated="{!c.recordUpdated}" -->
+    
+</aura:component>
