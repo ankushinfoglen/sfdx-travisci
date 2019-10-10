@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DependPL__c</fullName>
+    <externalId>false</externalId>
+    <label>DependPL</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ControlPL__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>a</fullName>
+                <default>false</default>
+                <label>a</label>
+            </value>
+            <value>
+                <fullName>b</fullName>
+                <default>false</default>
+                <label>b</label>
+            </value>
+            <value>
+                <fullName>c</fullName>
+                <default>false</default>
+                <label>c</label>
+            </value>
+            <value>
+                <fullName>d</fullName>
+                <default>false</default>
+                <label>d</label>
+            </value>
+            <value>
+                <fullName>e</fullName>
+                <default>false</default>
+                <label>e</label>
+            </value>
+            <value>
+                <fullName>SOQL ERROR</fullName>
+                <default>false</default>
+                <label>SOQL ERROR</label>
+            </value>
+            <value>
+                <fullName>RESOURCE NOT FOUND</fullName>
+                <default>false</default>
+                <label>RESOURCE NOT FOUND</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>1</controllingFieldValue>
+            <controllingFieldValue>A</controllingFieldValue>
+            <valueName>a</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>b</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>c</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>d</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>e</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>SOQL ERROR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>404</controllingFieldValue>
+            <valueName>RESOURCE NOT FOUND</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

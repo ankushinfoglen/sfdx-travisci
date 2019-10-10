@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Void_DocuSign_Envelopes</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Void DocuSign Envelopes</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/apex.js&quot;)}
+try
+{
+
+var id = &#39;{!Account.Id}&#39;;
+var vresult =  sforce.apex.execute(&quot;Ankuli.DocusignClient&quot;,&quot;voidEnvelope&quot;,{accId:id });
+
+   alert (vresult[0]);
+}
+catch(e)
+{
+alert (e.toString());
+window.location.href=window.location.href
+}</url>
+</WebLink>

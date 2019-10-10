@@ -3,7 +3,7 @@
     {
       "path": "force-app",
       "default": true
-    }
+    },{"path":"manifest"}
   ],
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
